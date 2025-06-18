@@ -1,5 +1,5 @@
-
 import React, { useState, useCallback } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Upload, Download, Check, AlertTriangle, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -91,6 +91,42 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>App Icon Generator - Create Icons for Android, iOS, and macOS</title>
+        <meta
+          name="description"
+          content="Easily generate app icons for Android, iOS, and macOS with our free online App Icon Generator. Upload your image and get a complete set of icons in seconds."
+        />
+        <meta
+          name="keywords"
+          content="app icon generator, create app icons, android icons, ios icons, macos icons, free icon generator"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="og:title"
+          content="App Icon Generator - Create Icons for Android, iOS, and macOS"
+        />
+        <meta
+          name="og:description"
+          content="Easily generate app icons for Android, iOS, and macOS with our free online App Icon Generator. Upload your image and get a complete set of icons in seconds."
+        />
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content="https://appicon.aibiz.id/" />
+        <meta name="og:image" content="https://appicon.aibiz.id/icon-preview.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="App Icon Generator - Create Icons for Android, iOS, and macOS"
+        />
+        <meta
+          name="twitter:description"
+          content="Easily generate app icons for Android, iOS, and macOS with our free online App Icon Generator."
+        />
+        <meta name="twitter:image" content="https://appicon.aibiz.id/icon-preview.jpg" />
+        <link rel="canonical" href="https://appicon.aibiz.id/" />
+      </Helmet>
+
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-12">
