@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback } from 'react';
 import { Upload, Download, Check, AlertTriangle, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -144,7 +143,7 @@ const Index = () => {
                         <AlertTriangle className="h-5 w-5 text-amber-500" />
                       )}
                       <span className={isHighRes ? "text-green-700" : "text-amber-700"}>
-                        {isHighRes ? "High resolution (512px+)" : "Low resolution (consider 512px+)"}
+                        {isHighRes ? "High resolution (512px+)" : "Low resolution (consider 512x512px)"}
                       </span>
                     </div>
                   </div>
@@ -180,7 +179,7 @@ const Index = () => {
 
           {/* Information Section */}
           <Card className="p-6">
-            <h3 className="text-lg font-semibold mb-4">What you'll get</h3>
+            <h3 className="text-lg font-semibold mb-4">What You'll Get</h3>
             <div className="grid md:grid-cols-3 gap-6 text-sm">
               <div>
                 <h4 className="font-medium text-green-600 mb-2">📱 Android Icons</h4>
